@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Weather ^^";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Pretty neat weather</h1>
+    <p>View the source code on <a href="https://github.com/krzysztof/incredevo-recruitment-weather-graphs">krzysztof/incredevo-recruitment-weather-graphs</a>.</p>
+</div>
+
+<div id="temperature-diagram"></div>
+<div id="wind-diagram"></div>
+
+<p>Click on a city to view it's details</p>
+
+@section Scripts
+{
+    <script src="js/drawDiagrams.js" defer ></script>
+}
